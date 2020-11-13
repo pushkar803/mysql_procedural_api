@@ -29,15 +29,7 @@ if(isset($in_data->{"endpoint"})){
 
 		if(isset($in_data->{"in_procedure"})){
 
-		$json = '{"procedure_name":"firma" ,"procedure_data":{"in_Country":"Romania"}}';
-
-		//$json = json_decode($json);
-		//$json = json_encode($in_data->{"in_procedure"});
-		//$json = json_decode($json);
-		//echo(json_encode($in_data->{"in_procedure"}));
-
-		echo get_by_procedure($in_data->{"in_procedure"});
-		//echo get_by_procedure($json);
+			echo get_by_procedure($in_data);
 
 		}
 		else{
